@@ -10,6 +10,12 @@ function onFormSubmit(event) {
   console.log(formData);
 
   formData.forEach((value, name) => {
+    const formDataEl = {
+      name,
+      value,
+    };
+
+    console.log(formDataEl);
     console.log('onFormSubmit -> name', name);
     console.log('onFormSubmit -> value', value);
   });
